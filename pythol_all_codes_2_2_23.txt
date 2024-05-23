@@ -1,0 +1,722 @@
+print("Shri Ganeshay namah : ")
+
+---
+
+print("program for read a number \n")
+number = int (input ("Enter the number  : - "))
+print (number)
+print (type (number))
+
+number = int (input ("enter the number :- "))
+
+---
+
+if number > 10 :
+              print (" number is greater than 10 ")
+              print  (" inside if statement")
+else :
+              print (" number is less than 10 ")
+              print  (" inside else statement")
+
+print("outside")
+
+---
+
+marks = int (input ("enter the marks :- "))
+
+if marks > 90 :
+              grade = "A "
+elif marks > 80 and marks <= 90 :
+            grade = "B "
+elif marks > 60 and marks <= 80 :
+            grade = " C "
+else :
+            grade = " D "
+
+print (" Your Grade = " , grade )
+
+---
+
+print (" program for odd-even number ")
+
+number = int (input ("enter the number :- "))
+
+if number % 2 == 0 :
+              print (" given number " , number , "is even ")
+             
+else :
+              print (" given number " , number , " is odd ")
+
+---
+
+# Python Program to find road tax of bike
+
+print("\t Python Program to find road tax of bike")
+cp = int(input("Give me Cost Prize of Bike :- "))
+
+if     cp <= 50000 :
+    tax = ( cp * 5) / 100
+elif  cp > 50000 and cp <= 100000 :
+    tax = ( cp * 10) / 100
+else :
+    tax = ( cp * 15) / 100 
+
+print(" Road Tax = " , tax , " Rs. ")
+
+---
+
+# Python Program to find given year is leap year or not
+
+print("\t Python Program to find given year is leap year or not \t ")
+year = int(input("\t Give me year :- "))
+
+if    ( ( year % 4 == 0 )  and  (year % 100 != 0) or (year % 400 == 0)  ):
+    print("\t Given year " , year , " is a leap year. ")
+else :
+    print("\t Given year " , year , " is not a leap year. ")
+
+---
+
+# Python Program to calculate the electricity bill
+
+print("\t Python Program to calculate the electricity bill \t ")
+unit = int(input("\t Give me Consumed Unit :- "))
+
+fix_unit1    = 100
+fix_unit2    = 200
+
+if (unit < 0) :
+    print ("\t Wrong input, Pls enter proper Unit ")
+elif (unit <= fix_unit1) :
+    bill = 0
+elif (unit <= fix_unit2) :
+    rem_unit = unit - fix_unit1
+    bill           = (rem_unit * 5 ) 
+else :
+    rem_unit = unit - fix_unit2
+    bill           = (rem_unit * 10 ) + ( fix_unit1 * 5)
+
+print ( "\t  Your Electicity Bill for " , unit , "Unit  is Rs. :- ", bill , "/-"  )  
+
+---
+
+rint("\t Python Program to find largest number among two numbers \t ")
+num1 = int(input("\t Give me First Integer Number :- "))
+num2 = int(input("\t Give me Second Integer Number :- "))
+
+if num1 > num2 :
+    max = num1
+else :
+   max = num2
+
+print("\t The maximum number among " , num1 , " and " , num2 , " is :- ", max)
+
+---
+
+print("\t Python Program to check last digit of number is divisible by 3 or not \t ")
+
+num = int (input("\t Enter Integer Number :- " ) )
+last_digit = num % 10
+
+if (last_digit % 3) == 0 :
+    print( " \t Given number " , num , " last digit is divisible by 3 " )
+else :
+    print( " \t Given number " , num , " last digit is not divisible by 3 " )
+
+---
+
+print("\t Python program to sum 1 to given number ")
+
+num=int(input("\t give me integer number :- "))
+sum_num = 0
+
+for i in range (1, num+1) :
+     sum_num += i
+
+print("\t sum = ",sum)
+
+---
+
+print("\t Python program to read number , and print table ")
+
+num=int(input("\t give me integer number :- "))
+
+print("\n\t TABLE ")
+print("\t ----------")
+
+if (num % 2 == 0) :
+    for i in range (1 , 11) :
+        print("\t", num , " * ", i , " = " , num * i)
+else :
+    for i in range (1 , 21) :
+        print("\t", num , " * ", i , " = " , num * i)
+    
+---
+
+print("\t Python program to read number , and print table ")
+
+num=int(input("\t give me integer number :- "))
+
+print("\n\t TABLE ")
+print("\t ----------")
+
+if (num % 2 == 0) :
+    i = 1
+    while i < 11 :
+        print("\t", num , " * ", i , " = " , num * i)
+        i += 1
+else :
+    i = 1
+    while i < 21 :    
+        print("\t", num , " * ", i , " = " , num * i)
+        i += 1
+---
+
+# Python program to find factorial of number
+
+print("\t Python program to find factorial of number ")
+num = int ( input (" \t Pls Give me interger number :- ") )
+
+fact = 1
+
+if num <=0 :
+    print ("\t Invalid number, pls try again ")
+else :
+    for i in range (1, num +1) :
+        fact *= i
+    print(" \t factorial of " , num , " = " , fact)    
+
+---
+
+# Python program to find given number is prime or not
+
+print("\t Python program to given number is prime or not ")
+num = int ( input (" \t Pls Give me interger number :- ") )
+
+prime = False
+
+if num <= 1 :
+    print(" \t Invalid number , pls. try again ")
+else :
+    for i in range ( 2 , int(num / 2) + 1 ) :
+        if (num % i ) == 0 :
+            prime = True
+            break
+  
+    if (prime) :
+        print("\t Given number " , num , " not is prime number ")
+    else :
+        print("\t Given number " , num , " is prime number ")
+          
+---
+
+print ("\t Python program to calculate the sum of series up to n term " )
+num = input ("\t Which number you want :- " )
+term = int ( input ("\t How many terms you want :- " ) )
+print("\n\t Series are as below :- ")
+
+nsum = 0
+ndigit = ' '
+for i in range (term) :
+    ndigit = ndigit + num
+    print(ndigit)
+    nsum = nsum + int (ndigit)
+    
+print("\t Sum of series = " , nsum) 
+
+---
+
+
+# Pythong program to check given string is palindrome or not
+
+print ("\t Python program to check given string is palindrome or not" )
+name = input ("\t give me your name :- ")
+name_len = len (name)
+
+palin = False
+
+for i in range ( int (name_len / 2) ) :
+    if (name[i] == name [name_len - 1 - i]) :
+        palin = True
+        break
+    
+    
+if (palin) :
+    print("\t Given name " , name , " is palindrome ")
+else :
+    print("\t Given name " , name , " is not palindrome ")
+
+---
+   
+# Pythong program to reverse given string
+
+def str_rev(name) :
+    name_len = len (name)
+    for i in range (name_len) :
+        print (name[name_len - 1 - i] , end= "" )
+
+print ("\t Python program to reverse given string" )
+name = input ("\t give me your name :- ")
+print("\t given name in reverse order = " , end="")
+str_rev(name)
+
+---
+
+# Pythong program to check given string is palindrome or not
+
+
+def str_palin(name) :
+    name_len = len (name)
+
+    palin = True
+
+    for i in range ( int (name_len / 2) ) :
+        if (name[i] != name [name_len - 1 - i]) :
+            palin = False
+            break
+   
+    if (palin) :
+        print("\t Given name " , name , " is palindrome ")
+    else :
+        print("\t Given name " , name , " is not palindrome ")
+
+
+    
+print ("\t Python program to check given string is palindrome or not" )
+name = input ("\t give me your name :- ")
+str_palin(name)
+        
+---
+
+# Pythong program to array print
+numbers = [ 1,2,3,5,6,7,3.5,7.5,-3,-9,-5.5, -10.3, 11,15, "abc", "pqr", "a1", "p"]
+'''
+ print(numbers)
+print(numbers[1])
+print(numbers[5])
+print(numbers[-1])
+print(numbers[-5])
+
+'''
+print(numbers[1:5])
+print(numbers[ ::-1])
+
+---
+
+numbers = [ 1,2,3,4,5,6,7,8,9,10]
+
+print (" Number list are as : ")
+print (numbers)
+
+sum = 0
+for i in range (len(numbers)) :
+    sum = sum + numbers[i]
+
+print(" Given numbers sum = " , sum)  
+
+
+---
+
+numbers = [ 1,2,3,11,17, 18, -14, 5,6, 27,- 8,  9, 10]
+
+print (" Number list are as : ")
+print (numbers)
+
+max_num = 0
+index = 0
+for i in range (len(numbers)) :
+      if max_num < numbers[i] :
+          max_num = numbers[i]
+          index = i
+      
+print("\n\t Maximum number among given list is = " , max_num , " and it found at " , index , " position ")    
+
+---
+
+numbers = [ 1,2,3,11,17, 18, -14, 5,6, 27,- 8,  9, 10]
+
+print (" Number list are as : ")
+print (numbers)
+
+max_num = 0
+index = 0
+for i in range (len(numbers)) :
+      if max_num < numbers[i] :
+          max_num = numbers[i]
+          index = i
+      
+print("\n\t Maximum number among given list is = " , max_num , " and it found at " , index , " position ") 
+
+---
+
+# Python program to find factorial of number
+
+def factorial(num) :
+    fact = 1
+    for i in range (1, num +1) :
+        fact *= i
+    print(" \t factorial of " , num , " = " , fact)
+
+print("\t Python program to find factorial of number ")
+num = int ( input (" \t Pls Give me interger number :- ") )
+if num <=0 :
+    print ("\t Invalid number, pls try again ")
+else :
+    factorial(num)
+
+---
+
+# Python program to find given number is prime or not
+
+print("\t Python program to given number is prime or not ")
+num = int ( input (" \t Pls Give me interger number :- ") )
+
+prime = False
+
+if num <= 1 :
+    print(" \t Invalid number , pls. try again ")
+else :
+    for i in range ( 2 , int(num / 2) + 1 ) :
+        if (num % i ) == 0 :
+            prime = True
+            break
+  
+    if (prime) :
+        print("\t Given number " , num , " not is prime number ")
+    else :
+        print("\t Given number " , num , " is prime number ")
+          
+---
+
+# Pythong program to calculate the sum of series up to n term
+
+print ("\t Python program to calculate the sum of series up to n term " )
+num = input ("\t Which number you want :- " )
+term = int ( input ("\t How many terms you want :- " ) )
+print("\n\t Series are as below :- ")
+
+nsum = 0
+ndigit = ' '
+for i in range (term) :
+    ndigit = ndigit + num
+    print(ndigit)
+    nsum = nsum + int (ndigit)
+    
+print("\t Sum of series = " , nsum)    
+ 
+---
+ 
+# Python program to print list using for loop
+
+a = [1, 2, 3, 4, 5]
+  
+# printing the list using loop
+for x in range(len(a)):
+    print (a[x])
+---
+
+# Python program to print list using for loop
+
+a = [1, 2, 3, 4, 5]
+
+# printing the all list elements
+print(" All Elements of list are as : - ")
+for x in range(len(a)):
+      print (a[x])
+
+  
+# printing the odd index positionns elements
+print(" Now print odd index positionns elements : - ")     
+for x in range(len(a)):
+    if (x % 2 != 0 ) :
+        print (a[x])
+---
+
+# python program to print reverse number of a given integer number
+
+print (" python program to print reverse number of a given integer number ")
+num = int (input (" Give me integer number :- "))
+
+print("reverse number of a given integer number " , num , " is ", end = "")
+
+while (num) :
+    dig = num % 10
+    print(dig, end="")
+    num = int ( num / 10 )
+    #print(num)
+
+---    
+
+# python program to print reverse number of a given integer number
+
+def rev_num (num) :
+
+    print("reverse number of a given integer number " , num , " is ", end = "")
+
+    while (num) :
+        dig = num % 10
+        print(dig, end="")
+        num = int ( num / 10 )
+
+print (" python program to print reverse number of a given integer number ")
+num = int (input (" Give me integer number :- "))
+
+rev_num(num)
+
+---
+
+# python program to print Fibonacci series 
+
+def fibo(terms) :
+    f1 = 0
+    f2 = 1
+    count = 0
+    print(" Fibonacci series of " , terms  , " terms are as :- ", )
+    while count < terms :
+        print (f1, end = " ")
+        temp = f1 + f2
+        f1 = f2
+        f2 = temp
+        count += 1
+    
+print (" python program to print Fibonacci series ")
+terms = int (input (" Give me number of term  :- "))
+
+if (terms <= 0) :
+    print(" Invalid number, pls enter number > 0 ")
+else :
+    fibo(terms)
+
+---
+
+# nuber replace
+numbers = [ 1,2,3,4,5,6,7,8,9,10]
+
+for i in range (len(numbers)) :
+    if numbers[i] == 6 :
+        numbers[i] = 12
+
+print(numbers)
+
+
+--
+
+#number append
+
+numbers1 = [ 1 , 2 , 3 , 4, 5 ]
+
+numbers2 = [ 21 , 22 , 23 , 24]
+
+temp = (numbers1 [-1])
+print (temp)
+
+print("Original number1 list are as :-")
+print(numbers1)
+      
+if (temp % 2 == 0) :
+    numbers1.append(1)
+else :
+    numbers1.append(0)
+
+print("after append , now number1 list are as :- ")
+print(numbers1)
+   
+---
+#zero append
+
+# [ 0 , 1, 5, 0 , 3]
+
+numbers1 = [ 0 , 1, 3, 1, 9 ]
+
+if 0 in numbers1 :
+    print("exists")
+    num_index = numbers1.index(0)
+    print(num_index)
+
+
+# find unique elements from a list
+#  [ 0 , 1 , 1, 3, 0 , 2 , 3 , 4] - > 2 , 4
+
+---
+
+# Python program to print list in reverse order using for loop
+
+a = [1, 2, 3, 4, 5]
+
+# printing the all list elements
+print("Python program to print list in reverse order using loop ")
+
+print(" All Elements of list are as : - ")
+for i in range(len(a)):
+      print (a[i])
+
+  
+# printing reverse order
+print(" Now print reverse order : - ")     
+for i in range(len(a)-1, -1 , -1):
+        print (a[i])
+
+ ---
+
+#  Python program to get the frequency of the elements in a list.
+#  using list method
+
+def count_frequency (numbers1):
+    num_freq = [ ]
+    for num in numbers1 :
+        found = False
+        for i in range ( len (num_freq) ) :
+            if num_freq [i][0] == num :
+                num_freq[i][1] += 1
+                found = True
+                break
+        if not found :
+            num_freq.append([num , 1])
+    return num_freq
+
+numbers = [21, 32, 13, 22, 14, 32, 25, 21, 27, 13, 24, 15, 26, 27]
+
+print("\t Python program to get the frequency of the elements in a list. ")
+print("\t First print list numbers. They are as :- " )
+for i in numbers :
+     print (i, end = " ")
+
+print("\n\t Now print the frequency :- ")
+
+print(count_frequency(numbers))
+
+
+---
+
+#  Python program to get the frequency of the elements in a list.
+#  using dictionery method
+
+def count_frequency(numbers1):
+    num_freq = { }
+    for num in numbers1 :
+        if num in num_freq :
+            num_freq[num] += 1
+        else:
+            num_freq[num] = 1
+    return num_freq
+
+numbers = [21, 32, 13, 22, 14, 32, 25, 21, 27, 13, 24, 15, 26, 27]
+
+print("\t Python program to get the frequency of the elements in a list. ")
+print("\t First print list numbers. They are as :- " )
+for i in numbers :
+     print (i, end = " ")
+
+print("\n\t Now print the frequency :- ")
+
+print(count_frequency(numbers))
+
+
+---
+
+# Python Program that get two lists as input and check if they have at least one common member
+
+def common_member(numbers1, numbers2):
+    common = False
+ 
+    for i in numbers1:
+        for j in numbers2:
+            if i == j :
+                common = True
+                return common
+    return common
+
+
+numbers1 = [15, 23, 30, 41, 57]
+numbers2 = [83, 65, 57, 78, 92]
+
+numbers3 = [25, 12, 35, 47, 58]
+numbers4 = [87, 63, 56, 74, 90]
+
+print("\t Python Program that get two lists as input ")
+print("\t and check if they have at least one common member")
+
+print("\t First list numbers are as :- " )
+for i in numbers1 :
+     print (i, end = " ")
+
+
+print("\n\t Second list numbers are as :-  ")
+for j in numbers2 :
+    print (j, end = " ")
+
+print("\n\t Now check they have common member or not ")
+
+if common_member(numbers1, numbers2):
+    print("\t The both lists have at least one common member.")
+else:
+    print("\t The both lists do not have any common members.")
+
+print("\n\t Now check for another list ")
+
+print("\t First list numbers are as :- ")
+for i in numbers3 :
+    print (i, end = " ")
+
+
+print("\n\t Second list numbers are as :-  ")
+for j in numbers4 :
+    print (j, end = " ")
+
+
+print("\n\t Now check they have common member or not ")
+
+if common_member(numbers3, numbers4):
+    print("\t The both lists have at least one common member.")
+else :
+    print("\t The both lists do not have any common members.")    
+ 
+---
+
+# Python Program that get two lists as input and check if they have at least one common member
+
+def is_circularly_identical(list1, list2):
+    if len(list1) != len(list2):
+        return False
+    for i in range(len(list1)):
+        if list1 == list2:
+            return True
+        list1 = list1[1:] + [list1[0]]
+    return False
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 1, 2]
+
+if is_circularly_identical(list1, list2):
+    print("The lists are circularly identical.")
+else:
+    print("The lists are not circularly identical.")
+
+---
+
+#  Python program to find the list of words that are longer than n from a given list of words
+
+def find_long_words(names_list, length1):
+    words_list = [ ]
+    for word in names_list:
+        if len(word) > length1:
+            words_list.append(word)
+    return words_list
+
+names = ["Apple", "Banana", "Mango", "Orange", "Pineapple",  "Grapes", "Watermelon", "Muskmelon", "Strawberry"]
+
+
+print("\t Python program to find the list of words that are longer than n from a given list of words ")
+print("\t First print list of words. They are as :- " )
+for i in names :
+     print (i, end = " ")
+
+length = int ( input ("\n Enter length :- " ) ) 
+
+print("\n\t Now print the words that are longer than ", length , " Character " )
+
+long_names = find_long_words(names, length)
+print(long_names)
+
+
+---
