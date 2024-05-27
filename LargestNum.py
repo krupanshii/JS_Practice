@@ -5,8 +5,8 @@
                                 by the user.
 '''
 
-A = int(input("Enter the 1st number: "))
-B = int(input("Enter the 2nd number: "))
+A = int(input("Enter your 1st number: "))
+B = int(input("Enter your 2nd number: "))
 
 if B > A:
     print("The largest number is ",B)
